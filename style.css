@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background-color: hsl(216deg, 12%, 8%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass";
+}
+.main-container .card {
+  background-color: #1f2630;
+  display: flex;
+  justify-content: space-around;
+  width: 375px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.main-container .card .question {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.main-container .card p {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  font-size: 15px;
+}
+.main-container .card .circle {
+  background-color: #262f38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-container .card .card-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-container .card .card-rating .rating {
+  background-color: #262f38;
+  color: hsl(217deg, 12%, 63%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-container .card .submit-button {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
