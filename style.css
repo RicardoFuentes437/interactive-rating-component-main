@@ -16,11 +16,11 @@ html, body {
 .main-container .card {
   background-color: #1f2630;
   display: flex;
-  justify-content: space-around;
   width: 375px;
   height: 350px;
   padding: 20px;
   border-radius: 20px;
+  justify-content: space-around;
 }
 .main-container .card .question {
   color: hsl(0deg, 0%, 100%);
@@ -52,9 +52,38 @@ html, body {
   height: 40px;
   border-radius: 50%;
 }
-.main-container .card .submit-button {
+.main-container .card .card-rating .submit-button {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
   width: 100%;
   border-radius: 20px;
+}
+.main-container .card-2 {
+  background-color: #1f2630;
+  display: flex;
+  width: 375px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  display: none;
+}
+.main-container .card-2 .thank-you-img {
+  height: 100px;
+}
+.main-container .card-2 .score p {
+  color: hsl(25deg, 97%, 53%);
+  width: 250px;
+  height: 30px;
+  padding: 4px;
+  background-color: #262f38;
+  border-radius: 20px;
+}
+.main-container .card-2 .thank-you h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+.main-container .card-2 .info p {
+  color: hsl(217deg, 12%, 63%);
 }/*# sourceMappingURL=style.css.map */

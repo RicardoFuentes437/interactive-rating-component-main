@@ -7,6 +7,15 @@ $Dark-Blue: #1f2630;
 $Very-Dark-Blue: hsl(216, 12%, 8%);
 $Orange: hsl(25, 97%, 53%);
 
+@mixin card-style {
+    background-color: $Dark-Blue;
+    display: flex;
+    width: 375px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -22,13 +31,8 @@ html, body {
     font-family: 'Overpass';
 
     .card {
-    background-color: $Dark-Blue;
-    display: flex;
-    justify-content: space-around;
-    width: 375px;
-    height: 350px;
-    padding: 20px;
-    border-radius: 20px;
+        @include card-style();
+        justify-content: space-around;
 
         .question {
             color: $White;
@@ -63,14 +67,49 @@ html, body {
                 height: 40px;
                 border-radius: 50%;
             }
+
+            .submit-button {
+                background-color: $Orange;
+                color: $White;
+                width: 100%;
+                border-radius: 20px;
+            }
         }
         
+    }
 
-        .submit-button {
-            background-color: $Orange;
-            color: $White;
-            width: 100%;
-            border-radius: 20px;
+    .card-2 {
+        @include card-style();
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        display: none;
+
+        .thank-you-img {
+            height: 100px;
+        }
+
+        .score {
+            p {
+                color: $Orange;
+                width: 250px;
+                height: 30px;
+                padding: 4px;
+                background-color: $Medium-Grey;
+                border-radius: 20px;
+            }
+        }
+
+        .thank-you {
+            h3 {
+                color: $White;
+            }
+        }
+
+        .info {
+            p {
+                color: $Light-Grey;
+            }
         }
     }
 }
