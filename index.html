@@ -36,14 +36,14 @@
           to help us improve our offering!</p>
       </div>
       <div class="card-rating">
-        <form action="javascript:showScore()" method="post">
+        <div class="rating-options">
           <input type="button" class="btn rating" value="1" onclick="javascript:setScore(this.value)">
           <input type="button" class="btn rating" value="2" onclick="javascript:setScore(this.value)">
           <input type="button" class="btn rating" value="3" onclick="javascript:setScore(this.value)">
           <input type="button" class="btn rating" value="4" onclick="javascript:setScore(this.value)">
           <input type="button" class="btn rating" value="5" onclick="javascript:setScore(this.value)">
-          <button type="submit" class="btn submit-button">Submit</button>
-        </form>
+        </div>
+        <button class="btn submit-button" onclick="javascript:showScore()">Submit</button>
       </div>
     </div>
   

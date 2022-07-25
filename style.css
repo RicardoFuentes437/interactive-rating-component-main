@@ -16,11 +16,17 @@ html, body {
 .main-container .card {
   background-color: #1f2630;
   display: flex;
-  width: 375px;
-  height: 350px;
+  width: 365px;
+  height: 360px;
   padding: 20px;
   border-radius: 20px;
   justify-content: space-around;
+}
+@media (max-width: 375px) {
+  .main-container .card {
+    width: 320px;
+    height: 360px;
+  }
 }
 .main-container .card .question {
   color: hsl(0deg, 0%, 100%);
@@ -31,7 +37,10 @@ html, body {
   font-weight: 400;
   font-size: 15px;
 }
-.main-container .card .circle {
+.main-container .card .card-star-icon {
+  padding-bottom: 10px;
+}
+.main-container .card .card-star-icon .circle {
   background-color: #262f38;
   display: flex;
   align-items: center;
@@ -42,14 +51,20 @@ html, body {
 }
 .main-container .card .card-rating {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
-.main-container .card .card-rating .rating {
+.main-container .card .card-rating .rating-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.main-container .card .card-rating .rating-options .rating {
   background-color: #262f38;
   color: hsl(217deg, 12%, 63%);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .main-container .card .card-rating .submit-button {
@@ -61,8 +76,8 @@ html, body {
 .main-container .card-2 {
   background-color: #1f2630;
   display: flex;
-  width: 375px;
-  height: 350px;
+  width: 365px;
+  height: 360px;
   padding: 20px;
   border-radius: 20px;
   align-items: center;
@@ -70,19 +85,31 @@ html, body {
   flex-direction: column;
   display: none;
 }
+@media (max-width: 375px) {
+  .main-container .card-2 {
+    width: 320px;
+    height: 360px;
+  }
+}
 .main-container .card-2 .thank-you-img {
   height: 100px;
 }
+.main-container .card-2 .score {
+  padding-top: 15px;
+}
 .main-container .card-2 .score p {
   color: hsl(25deg, 97%, 53%);
-  width: 250px;
+  width: 200px;
   height: 30px;
-  padding: 4px;
+  padding: 4px 13px 4px;
   background-color: #262f38;
   border-radius: 20px;
 }
 .main-container .card-2 .thank-you h3 {
   color: hsl(0deg, 0%, 100%);
+}
+.main-container .card-2 .info {
+  text-align: center;
 }
 .main-container .card-2 .info p {
   color: hsl(217deg, 12%, 63%);
